@@ -1,5 +1,3 @@
-_Created with [AIPRM Prompt "Readme Generator | Markdown Format | GitHub."](https://www.aiprm.com/prompts/softwareengineering/text-editor/1794387468406222848/)_
-
 # **Box64Droid**
 
 Box64Droid is a versatile toolkit of scripts designed to automate the installation of preconfigured rootfs with **Box64**, **Box86**, **Wine**, **DXVK**, **D8VK** on Android devices. It originated as a fork of Box4Droid (with Box64) and has evolved into a powerful emulator environment.

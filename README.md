@@ -1,4 +1,4 @@
-# **Box64Droid**
+# **Box64Droid Enhanced**
 
 [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Welcome+to+Box64Droid;The+Fastest+Windows+Emulator)](https://git.io/typing-svg)
 
@@ -28,7 +28,8 @@ Box64Droid is a project with scripts that automate installing preconfigured root
 2. **Run the installer:**
 
    ```bash
-   curl -o install https://raw.githubusercontent.com/Ilya114/Box64Droid/main/installers/install.sh && chmod +x install && ./install
+   curl -o install https://raw.githubusercontent.com/Leodas-code/Box64Droid/v2.0/installers/install.sh && chmod +x install && ./install
+   
    ```
 
    - Select your desired version (recommend: `native`)
@@ -43,7 +44,7 @@ Box64Droid is a project with scripts that automate installing preconfigured root
    This will start Termux-X11 and launch the start menu.
 
 4. **Use Input Bridge (for input handling):**
-   - Install version `0.1.9` APK
+   - Install APK
    - Launch the app both on Android and from Wine inside Box64Droid.
 
 ---

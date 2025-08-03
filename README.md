@@ -1,5 +1,7 @@
 # **Box64Droid**
 
+[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Welcome+to+Box64Droid;The+Fastest+Windows+Emulator)](https://git.io/typing-svg)
+
 Box64Droid is a versatile toolkit of scripts designed to automate the installation of preconfigured rootfs with **Box64**, **Box86**, **Wine**, **DXVK**, **D8VK** on Android devices. It originated as a fork of Box4Droid (with Box64) and has evolved into a powerful emulator environment.
 
 ---

@@ -1,20 +1,13 @@
-# **Box64Droid Enhanced**
+# **DroidBox64**
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Welcome+to+Box64Droid;The+Fastest+Windows+Emulator)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Welcome+to+DroidBox64;The+Fastest+Windows+Emulator+For+Android)](https://git.io/typing-svg)
 
 Box64Droid is a versatile toolkit of scripts designed to automate the installation of preconfigured rootfs with **Box64**, **Box86**, **Wine**, **DXVK**, **D8VK** on Android devices. It originated as a fork of Box4Droid (with Box64) and has evolved into a powerful emulator environment.
 
 ---
 
-## 📢 News and Updates
-
-[![telegram](https://img.shields.io/badge/chat-telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/x86_64_on_android)
-[![discord](https://img.shields.io/discord/308323056592486420?logo=discord)](https://discord.gg/thjpZ4P7Bm)
-
 Box64Droid is a project with scripts that automate installing preconfigured rootfs with [Box64](https://github.com/ptitSeb/box64), [Box86](https://github.com/ptitSeb/box86), [Wine](https://github.com/Kron4ek/Wine-Builds), [DXVK](https://github.com/doitsujin/dxvk), [D8VK](https://github.com/AlpyneDreams/d8vk) on Android. Originally was a [fork](https://github.com/Ilya114/Box4Droid) of [Box4Droid](https://github.com/Herick75/Box4Droid) with Box64.
 
-- News about the project are published on the [Telegram](https://t.me/box64droidch) channel.
-- The project site is available [here](https://ilya114.github.io).
 
 ---
 

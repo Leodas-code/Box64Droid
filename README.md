@@ -38,14 +38,14 @@ Box64Droid is a project with scripts that automate installing preconfigured root
 
 4. **Use Input Bridge (for input handling):**
    - Install APK
-   - Launch the app both on Android and from Wine inside Box64Droid.
+   - Launch the app both on Android and from Wine inside DroidBox64.
 
 ---
 
 ## 🏠 Homescreen Launch (Native Version)
 
 - Use **Termux:Widget** to:
-  - Launch Box64Droid
+  - Launch DroidBox64
   - Check for updates
   - Open Wine or other GUI options
 

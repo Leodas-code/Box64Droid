@@ -3,7 +3,7 @@ exec(open('/sdcard/Box64Droid (native)/Box64Droid.conf').read())
 exec(open('/sdcard/Box64Droid (native)/DXVK_D8VK_HUD.conf').read())
 os.system("clear")
 if 'WD' in os.environ:
-    print("Welcome to Box64Droid! Select need resolution:")
+    print("Welcome to Box64Droid! Select the resolution:")
     print("")
 else:
     print("Select need resolution:")
@@ -19,14 +19,14 @@ else:
 print("")
 res = input()
 if res != "1" and res != "2" and res != "3" and res != "4" and res != "5" and res != "6" and res != "7":
-    print("Incorrect or empty resolution!")
+    print("Invalid or Empty Value!")
     os.system("python3 $PREFIX/bin/start-box64.py")
     exit()
 elif res == "5":
     os.system("clear")
-    res = input("Write need resolution: ")
+    res = input("Enter Custom resolution: ")
     if res == "":
-        print("Empty resolution!")
+        print("Empty Value!")
         os.system("python3 $PREFIX/bin/start-box64.py")
         exit()
     os.system("clear")
@@ -67,6 +67,9 @@ else:
     print(" Stopping Termux-X11...")
     print("")
     os.system("pkill -f pulseaudio && pkill -f 'app_process / com.termux.x11'")
-    print(" Exiting from Box64Droid...")
+    print(" Exiting Box64Droid...")
+    print(" Thanks for using Box64Droid ")
+    print(" Visit again!")
+    print("===========================\n")
     print("")
     exit()

@@ -26,7 +26,7 @@ def check_config():
     exec(open('/sdcard/Box64Droid (native)/DXVK_D8VK_HUD.conf').read())
 def check_prefix():
     if not os.path.exists("/data/data/com.termux/files/home/.wine"):
-        print("Wine prefix not found! Creating...")
+        print("Wine prefix not found! Creating one for you...")
         create_prefix()
 def recreate_prefix():
     prefix_path="/data/data/com.termux/files/home/.wine"
@@ -47,7 +47,7 @@ def create_prefix():
     print("Done!")
 def change_wine_version():
     os.system("clear")
-    print("Select Wine (WoW64) version to install:")
+    print("Select Wine (WoW64) version to install : ")
     print("1) Wine 9.1")
     print("2) Wine 9.2")
     print("3) Wine 9.4")
@@ -58,10 +58,10 @@ def change_wine_version():
         print("7) Exit")
     else:
         print("7) Back to previous menu")
-    print("")
+    print(" ")
     choice = input()
     if choice != "1" and choice != "2" and choice != "3" and choice != "4" and choice != "5" and choice != "6" and choice != "7":
-        print("Incorrect or empty option!")
+        print("Invalid or Empty Option!")
         change_wine_version()
     elif choice == "7":
         if 'WD' in os.environ:
@@ -122,19 +122,40 @@ def change_wine_version():
         print("Done!")
 def main_menu():
     os.system("clear")
-    print("Welcome to Box64Droid! Select to start:")
-    print("")
-    print("1) Wine")
-    print("2) Wine (debug version)")
-    print("3) Change Wine version")
-    print("4) Recreate Wine prefix")
-    print("5) Check for updates")
-    print("6) Update Box64")
-    print("7) Winetricks")
-    print("8) Exit")
-    print("")
-    print("Note: Console UI will be EOL on 1 June of 2025. ATM Box64Droid will use Termux:Widgets. To use it install and create Termux widget in homescreen") 
-    print("")
+    def print_main_menu():
+    RED = '\033[91m'
+    RESET = '\033[0m'
+
+    print(RED + r"""
+  ____              _  _  _     _       
+ | __ )  ___   ___ | || || |__ (_)_ __  
+ |  _ \ / _ \ / _ \| || || '_ \| | '_ \ 
+ | |_) | (_) | (_) | || || | | | | | | |
+ |____/ \___/ \___/|_||_||_| |_|_|_| |_|
+                                        
+     Welcome to Box64Droid!
+    =========================
+""" + RESET)
+
+    print("""
+ Select an option to start:
+
+  [1] Wine
+  [2] Wine (debug version)
+  [3] Change Wine version
+  [4] Recreate Wine prefix
+  [5] Check for updates
+  [6] Update Box64
+  [7] Winetricks
+  [8] Exit
+
+ ----------------------------------------
+ Note: Console UI will be EOL on 1 June 2025.
+ Box64Droid will use Termux:Widgets instead.
+ Install Termux Widget & place it on homescreen.
+ ----------------------------------------
+""")
+
     choice = input()
     if choice != "1" and choice != "2" and choice != "3" and choice != "4" and choice != "5" and choice != "6" and choice != "7" and choice != "8":
         print("Incorrect or empty option!")

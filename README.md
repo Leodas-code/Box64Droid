@@ -21,7 +21,7 @@ Box64Droid is a project with scripts that automate installing preconfigured root
 2. **Run the installer:**
 
    ```bash
-   curl -o install https://raw.githubusercontent.com/Leodas-code/Box64Droid/v2.0/installers/install.sh && chmod +x install && ./install
+   curl -o install https://raw.githubusercontent.com/Leodas-code/DroidBox64/v2.0/installers/install.sh && chmod +x install && ./install
    
    ```
 

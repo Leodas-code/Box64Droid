@@ -47,23 +47,24 @@ def create_prefix():
     print("Done!")
 def change_wine_version():
     os.system("clear")
-    print("Select Wine (WoW64) version to install : ")
-    print("1) Wine 9.1")
-    print("2) Wine 9.2")
-    print("3) Wine 9.4")
-    print("4) Wine 9.7")
-    print("5) Wine 9.11")
-    print("6) Wine 9.13")
+    print("Select Wine version to install : ")
+    print("1) Wine 9.1 (WoW64)")
+    print("2) Wine 9.2 (WoW64)")
+    print("3) Wine 9.4 (WoW64)")
+    print("4) Wine 9.7 (WoW64)")
+    print("5) Wine 9.11 (WoW64)")
+    print("6) Wine 9.13 (WoW64)")
+    print("7) Wine 10.0")
     if 'WD' in os.environ:
-        print("7) Exit")
+        print("8) Exit")
     else:
-        print("7) Back to previous menu")
+        print("8) Back to previous menu")
     print(" ")
     choice = input()
-    if choice != "1" and choice != "2" and choice != "3" and choice != "4" and choice != "5" and choice != "6" and choice != "7":
+    if choice != "1" and choice != "2" and choice != "3" and choice != "4" and choice != "5" and choice != "6" and choice != "7" and choice != "8":
         print("Invalid or Empty Option!")
         change_wine_version()
-    elif choice == "7":
+    elif choice == "8":
         if 'WD' in os.environ:
             exit()
         else:
@@ -118,22 +119,24 @@ def change_wine_version():
             print("Unpacking Wine 9.13 (WoW64)...")
             os.system("tar -xf wine-9.13-glibc-amd64-wow64.tar.xz -C $PREFIX/glibc/opt")
             os.system("mv $PREFIX/glibc/opt/wine-git-8d25995-exp-wow64-amd64 $PREFIX/glibc/opt/wine")
+        elif choice == "7":
+            print("Downloading Wine 10.0...")
+            print("")
+            os.system("wget -q --show-progress https://github.com/Leodas-code/Box64Droid/releases/download/v2.0/wine-10.0.tar.xz")
+            print("")
+            print("Unpacking Wine 10.0...")
+            os.system("tar -xf wine-10.0.tar.xz -C $PREFIX/glibc/opt")
+            os.system("mv $PREFIX/glibc/opt/wine-10.0 $PREFIX/glibc/opt/wine")
         os.system("rm wine*")
         print("Done!")
 def main_menu():
     os.system("clear")
-    def print_main_menu():
     RED = '\033[91m'
     RESET = '\033[0m'
 
     print(RED + r"""
-  ____              _  _  _     _       
- | __ )  ___   ___ | || || |__ (_)_ __  
- |  _ \ / _ \ / _ \| || || '_ \| | '_ \ 
- | |_) | (_) | (_) | || || | | | | | | |
- |____/ \___/ \___/|_||_||_| |_|_|_| |_|
-                                        
-     Welcome to Box64Droid!
+                                                               
+     Welcome to DroidBox64!
     =========================
 """ + RESET)
 
